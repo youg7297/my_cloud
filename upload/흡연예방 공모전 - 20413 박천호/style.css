@@ -1,0 +1,303 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "맑은 고딕";
+}
+h1{
+	font-size: 1.5em;
+}
+#vevo{
+	position: fixed;
+	right: 0;
+	bottom: 0; 
+	min-width: 100%; 
+	min-height: 100%;
+	z-index: -50;
+}
+
+.button{
+	position: absolute;
+	width: 110px;
+	height: 50px;
+	background-color: #fff;
+	right: 0;
+	bottom: 100px;
+}
+.button img{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	z-index: 99999;
+	right: 0;
+	top: 2.5px;
+	margin-top: 10px;
+}
+.button button{
+	width: 80px;
+	height: 30px;
+	z-index: 99;
+	position: absolute;
+	font-size: bold;
+	border: none;
+	background-color: #fff;
+	margin-top: 10px;
+	font-size: 20px;
+}
+.err{
+	position: absolute;
+	width: 400px;
+	height: 25px;
+	z-index: 9999;
+	top: 10px;
+	left: 10px;
+}
+.err img{
+	position: relative;
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+.post{
+	position: relative;
+	color: #bbbbbb;
+	top: 0;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+}
+header{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	border-bottom: 2px solid #e5e5e5;
+	z-index: 999999;
+	top: 0;
+}
+.heaact{
+	height: 70px;
+	transition: 1s;
+}
+#progress-con{
+	position: fixed;
+	width: 100%;
+	height: 5px;
+	background-color: white;
+	top: 0;
+}
+#progress{
+	width: 0%;
+	height: 5px;
+	background-color: darkorange;
+	top: 0;
+}
+.top-area{
+	width: 1000px;
+	height: 60px;
+	position: relative;
+	top: 20px;
+	margin: 0 auto;
+}
+.topact{
+	top: 5px;
+	transition: 1s;
+}
+.logo{
+	width: 155px;
+	height: 60px;
+	background-image: url(img/logo.png);
+	background-size: cover;
+	position: absolute;
+}
+nav{
+	position: absolute;
+	width: 600px;
+	height: 60px;
+	right: 0px;
+}
+nav ul{list-style: none; width: 600px;}
+nav ul li a{
+	width: 150px;  
+	height: 60px; 
+	text-decoration: none; 
+	color: black;
+	float: left; 
+	text-align: center; 
+	line-height: 60px;
+    font-weight: bold;
+}
+.nav-pro-con{
+	width: 600px;
+	height: 2px;
+	background: #fff;
+	right: 0;
+	top: 50px;
+	position: absolute;
+}
+.nav-pro{
+	position: relative;
+	width: 100px;
+	height: 2px;
+	left: 25px;
+	background-color: red;
+}
+header::after{
+	content: '';
+	position: absolute;
+	top: 100px;
+	height: 200px;
+	background-color: red;
+	width: 200%;
+	display: none;
+}
+header:hover header:after{
+	display: block;
+}
+#section1{
+	margin-top: 100px;
+	position: relative;
+	background-color: #000000;
+	width: 100%;
+	height: 800px;
+	z-index: -100;
+}
+.slider{
+	position: relative;
+	width: 550px;
+	height: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: -50;
+}
+.slider ul{list-style: none;}
+.slider ul li{
+	width: 550px;
+	height: 800px;
+	position: absolute;
+}
+.slider ul li img{
+	width: 550px;
+	height: 800px;
+}
+.slider ul li{
+	left: 550px;
+}
+.slider ul li:first-child{
+	left: 0;
+}
+.scroll-icon{
+	width: 107px;
+	height: 107px;
+	position: absolute;
+	background-image: url(img/scroll_icon.png);
+	bottom: 10px;
+	left: 211.5px;
+}
+/* .left{width: 50px; height: 50px; position: absolute; background-color: #fff;left: 10px; z-index: 2;}
+.right{width: 50px; height: 50px; position: absolute; background-color: #fff; right: 10px;} */
+#section2{
+    margin: 100px auto 0 auto;
+	position: relative;
+	width: 1000px;
+	height: 1600px;
+}
+hgroup{
+    text-align: center;
+    margin: 100px 0 30px 0;
+}
+hgroup h1{
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+.effect1{
+    background-image: url(img/smok-effect1.PNG);
+    width: 550px;
+    height: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+	margin: 0 auto;
+}
+.effect2{
+    background-image: url(img/smok-effect2.jpg);
+    width: 600px;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+#section3{
+    margin: 0 auto;
+    width: 1000px;
+    height: 1700px;
+}
+.Passive-smoking1{
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background-size: cover;
+    background-image: url(img/Passive-smoking1.jpg);
+}
+.Passive-smoking2{
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    background-size: cover;
+    background-image: url(img/Passive-smoking2.jpg);
+}
+.prevent-smoking{
+	width: 680px;
+	height: 400px;
+	margin: 0 auto;
+	background-image: url(img/prevent-smoking.jpg);
+}
+#section4{
+    margin: 0 auto;
+    width: 1000px;
+    height: 900px;
+}
+.helping-notsmoking{
+	width: 720px;
+	height: 720px;
+	margin: 0 auto;
+	background-image: url(img/helping-notsmoking.jpg);
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: #F5EEDD;
+	text-align: center;
+	line-height: 100px;
+}
+.side-bar{
+	width: 650px;
+	height: 60px;
+	background: white;
+	position: relative;
+	margin: 10px auto;
+	/* overflow: hidden; */
+}
+
+#site1{
+	position: relative; top: -10px;
+	margin: 0 10px;
+}
+#site2{
+	position: relative;
+	margin: 0 10px;
+}
+#site3{
+	position: relative; top: -8px;
+	margin: 0 10px;
+}
+#site4{
+	width: 120px;
+	height: 50px;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	float: right;
+	color: #575757;
+	top: 3px;
+}

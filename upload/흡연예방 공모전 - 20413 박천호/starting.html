@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>금연 광고</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/title-img.png" type="image/gif" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <video autoplay id="vevo">
+        <source src="mp4/금연 광고 후회.mp4" type="video/mp4">
+    </video>
+    <div class="button"><button>SKIP</button><img src="img/drop.png" alt="drop"></div>
+    <div class="err">
+        <img src="img/Help-icon.png" alt="err" class="i"> <div class="post">　영상이 재생되지 않나요?</div>
+    </div>
+    
+</body>
+<script>
+    $(function() {
+    function swing() {
+            $('.err').animate({'top':'10px'},600).animate({'top':'15px'},600, swing);
+            $('.button img').animate({'right':'5px'},600).animate({'right':'10px'},600, swing);
+        }
+        swing();
+    });
+    $(".err").click(function(){
+        $(".post").text("　Ctrl + Shift + R 또는 F5를 눌러보세요!");
+    });
+    $(".button").click(function(){
+        location.href = 'index.html';
+    });
+    setTimeout(function(){ location.href = 'index.html'; }, 44000);
+</script>
+</html>
